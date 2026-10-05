@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Obsidian Launcher — offline Minecraft launcher</title>
+  <meta name="description" content="Obsidian Launcher: offline Minecraft: Java Edition launcher. Vanilla, Fabric, Forge, mods, skins. No account needed." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-in">
+      <span class="brand">⬢ Obsidian Launcher</span>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="https://github.com/ajsd939/obsidian-launcher">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Offline Minecraft launcher.<br /><span>No account. No hassle.</span></h1>
+        <p class="sub">Vanilla, Fabric, Quilt, Forge, NeoForge · Modrinth mods · offline skins · auto Java. Free and open source.</p>
+        <div class="cta">
+          <a class="btn primary" id="dl" href="https://github.com/ajsd939/obsidian-launcher/releases/latest">Download for Windows</a>
+          <a class="btn" href="https://github.com/ajsd939/obsidian-launcher">Source code</a>
+        </div>
+        <p class="fine">Windows x64 · NSIS installer · you should own Minecraft to play offline legally</p>
+      </div>
+    </section>
+
+    <section id="features" class="wrap">
+      <h2>Features</h2>
+      <div class="grid">
+        <div class="card"><h3>Offline profiles</h3><p>Multiple saved usernames with correct offline UUIDs. No Mojang or Microsoft login.</p></div>
+        <div class="card"><h3>Every loader</h3><p>Vanilla, Fabric, Quilt, Forge (incl. legacy ≤1.12), NeoForge — headless installs.</p></div>
+        <div class="card"><h3>Mods</h3><p>Modrinth browser with version filtering, <code>.mrpack</code> import, per-instance mod lists.</p></div>
+        <div class="card"><h3>Skins everywhere</h3><p>Auto-generated skin resource pack works even on vanilla; capes on modded via CustomSkinLoader.</p></div>
+        <div class="card"><h3>Auto Java</h3><p>Finds installed JDKs, downloads Temurin 8/17/21 when missing. Java 8 enforced for old versions.</p></div>
+        <div class="card"><h3>Fast &amp; isolated</h3><p>Parallel downloads with live progress, natives extraction, one folder per instance.</p></div>
+      </div>
+    </section>
+
+    <section id="download" class="wrap">
+      <h2>Download</h2>
+      <div class="card dl">
+        <div>
+          <b>Obsidian Launcher 0.0.1 — stable</b>
+          <p class="muted">Windows 10/11 x64 · run the setup, pick a name, hit Play.</p>
+        </div>
+        <a class="btn primary" href="https://github.com/ajsd939/obsidian-launcher/releases/latest/download/obsidian-launcher_0.0.1_x64-setup.exe">⬇ Setup (.exe)</a>
+      </div>
+      <p class="muted">Prefer building yourself? <code>npm install &amp;&amp; npm run tauri dev</code> — needs Rust + Node. Full guide in the <a href="https://github.com/ajsd939/obsidian-launcher">README</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>⬢ Obsidian Launcher — MIT-ish, do what you want. Not affiliated with Mojang or Microsoft.</span>
+      <a href="https://github.com/ajsd939/obsidian-launcher">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>

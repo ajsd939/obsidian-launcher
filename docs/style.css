@@ -1,0 +1,30 @@
+:root { color-scheme: dark; --bg: #0b0d12; --card: #12151d; --line: #232838; --txt: #e8eaf0; --mut: #9aa3b8; --acc: #8b7cff; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--txt); font-family: Inter, "Segoe UI", system-ui, sans-serif; }
+a { color: var(--acc); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+.nav { border-bottom: 1px solid var(--line); background: #0e1118; position: sticky; top: 0; }
+.nav-in { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+.brand { font-weight: 800; color: #c9b8ff; }
+.nav nav { display: flex; gap: 18px; }
+.nav nav a { color: var(--mut); text-decoration: none; font-size: 14px; }
+.nav nav a:hover { color: #fff; }
+.hero { text-align: center; padding: 84px 0 64px; background: radial-gradient(700px 340px at 50% 0%, #1a1740, transparent); }
+.hero h1 { font-size: 44px; margin: 0 0 12px; letter-spacing: -0.02em; }
+.hero h1 span { color: #c9b8ff; }
+.sub { color: var(--mut); font-size: 17px; margin: 0 0 26px; }
+.cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 12px 26px; border-radius: 12px; border: 1px solid #333c58; color: #fff; text-decoration: none; font-weight: 600; }
+.btn.primary { background: linear-gradient(135deg, #7c5cff, #00c8e0); border: none; }
+.fine { color: var(--mut); font-size: 12px; margin-top: 16px; }
+h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .1em; color: var(--mut); margin: 40px 0 14px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+@media (max-width: 720px) { .grid { grid-template-columns: 1fr; } .hero h1 { font-size: 32px; } }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
+.card h3 { margin: 0 0 8px; font-size: 16px; }
+.card p { margin: 0; color: var(--mut); font-size: 14px; }
+.card.dl { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+.muted { color: var(--mut); font-size: 14px; }
+code { background: #0a0c10; border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; font-size: 13px; }
+footer { border-top: 1px solid var(--line); margin-top: 60px; padding: 22px 0; }
+.foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; color: var(--mut); font-size: 13px; }
